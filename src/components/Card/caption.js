@@ -9,7 +9,7 @@ export default class CardCaption extends React.Component {
   }
 
   componentWillReceiveProps(nextProps, prevProps) {
-    if (this.props.cardIndex === nextProps.commentIndex) {
+    if (this.props.cardIndex === nextProps.commentIndex && nextProps.comment !== null) {
       this.setState((prevState) => {
         prevState.comments.push(nextProps.comment)
         return {

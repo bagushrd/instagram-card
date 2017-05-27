@@ -1,6 +1,6 @@
 const initialState = {
-  commentIndex: undefined,
-  commentText: undefined
+  commentIndex: null,
+  commentText: null
 }
 
 const cards = (state = initialState, action) => {
@@ -14,7 +14,8 @@ const cards = (state = initialState, action) => {
     case 'SET_FOCUS_COMMENT':
       return {
         ...state,
-        commentIndex
+        commentIndex,
+        commentText: null
       }
     case 'SET_COMMENT':
       return {
