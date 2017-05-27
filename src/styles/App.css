@@ -89,14 +89,13 @@
 .card-container .card-info {
   text-align: left;
   padding-left: 10px;
-  padding-bottom: 10px;
   border-left: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
 }
 
 .card-container .card-caption {
   text-align: left;
-  padding: 0px 20px 5px;
+  padding: 10px 20px 15px;
   border-left: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
 }
@@ -110,7 +109,7 @@
   font-size: 14px;
   color: #a7a7a7;
   text-align: left;
-  padding: 10px 20px 0;
+  padding: 0 20px;
   border-left: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
 }

@@ -33,9 +33,7 @@ export default class CardInfo extends React.Component {
           <span onClick={this.likeThis}>
             <i className={classnames('fa', this.state.heartClass)} aria-hidden="true"></i>
           </span>
-          <span onClick={() => this.props.setFocusComment(this.props.cardIndex)}>
-            <i className="fa fa-comment-o" aria-hidden="true"></i>
-          </span>
+          <span><i className="fa fa-comment-o" aria-hidden="true"></i></span>
         </div>
         <div className="card-icons-info">
           <span>{this.state.totalLikes} {this.props.likesText}</span>

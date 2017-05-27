@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './styles/App.css';
 import './styles/font-awesome-4.7.0/css/font-awesome.css';
-import CardContainer from './containers/Card';
+
+import Card from './components/Card';
 
 class App extends Component {
   render() {
@@ -12,7 +13,15 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="App-intro">
-          <CardContainer />
+          <Card
+            userImage="http://localhost:3000/images/9gag.jpg"
+            username="bagusherdiawan"
+            cardImage="http://localhost:3000/images/9gag-image.jpg"
+            totalLikes="10"
+            totalLikesText="likes"
+            caption="Live smarter every single day"
+            cardTimePass="9 hours"
+          />
         </div>
       </div>
     );
